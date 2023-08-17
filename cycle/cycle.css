@@ -1,0 +1,96 @@
+/* リセットスタイル */
+body, h1, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* 背景とテキストのスタイル */
+body {
+  background-color: #07ccf8;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* ゲーム紹介のコンテナ */
+.game-intro {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(63, 124, 217, 0.1);
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+/* タイトルのスタイル */
+h1 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 28px;
+  border: 2px solid lightskyblue;
+  border-radius: 5px;
+}
+
+/* 内容のスタイル */
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* リストのスタイル */
+ul {
+  text-align: left;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+/* リストアイテムのスタイル */
+li {
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* 強調テキストのスタイル */
+strong {
+  color: red /* ポイントの色 */
+}
+
+/* 警告テキストのスタイル */
+.warning {
+  color: orange/* 警告の色 */
+}
+
+.strongstyle {
+  font-weight: bold;
+}
+
+.point {
+  color: #07ccf8;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+/* 点滅するテキストに対するスタイル */
+.blinking {
+  animation: blink 2s linear infinite;
+  font-size: 20px;
+}
+
+#breakline {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  #container {
+      height: auto;
+  }
+}
