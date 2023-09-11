@@ -42,14 +42,18 @@ body {
 }
 
 .treasure {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   animation: spin 4s linear infinite;
 }
 
 .map {
   width: 100%;
   height: 100%;
+}
+
+#map {
+  margin-bottom: 40px;
 }
 
 .treasure1 {
@@ -69,6 +73,38 @@ body {
 .treasure4 {
   top: 50%; /* 適切な座標を指定 */
   left: 90%; /* 適切な座標を指定 */
+}
+
+/* ボタンコンテナのスタイル */
+.button-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* トランジションボタンの新しいスタイル */
+.transition-button {
+  background-color: #f88007;
+  color: white;
+  border: none;
+  padding: 20px 40px; /* サイズを変更 */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* 影のトランジションを追加 */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.549); /* 影を追加 */
+}
+
+.transition-button:hover {
+  background-color: #f88007;
+}
+
+.transition-button.clicked {
+  background-color:#f88007;
+  transform: scale(0.95);
+  box-shadow: none; /* 押下時に影を消す */
 }
 
 /* アニメーション */

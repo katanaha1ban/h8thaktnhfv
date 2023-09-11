@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f7f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* 変更されたスタイル */
+th {
+  background-color: #f0f7f9;
+}
+
+th:first-child, td:first-child {
+  background-color: #e0f3f7;
+  width: 33.33%; /* 景品列の幅を表全体の三分の2に設定 */
+}
+
+
+@media (max-width: 768px) {
+  #container {
+      height: auto;
+  }
+}
+

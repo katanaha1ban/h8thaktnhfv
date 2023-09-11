@@ -1,0 +1,67 @@
+/* styles.css */
+body {
+  background-color: #a9d8e6; /* 薄い水色系の背景色 */
+  margin-top: 100px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* 水平方向中央に配置 */
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.card {
+  text-align: center;
+  width: 80%;
+  background-color: #e5c5f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* margin: 20px 0; */
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffcc00; /* ボタンの背景色を黄色に設定 */
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+  #container {
+      height: auto;
+  }
+}
+

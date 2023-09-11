@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+#treasure-box {
+  position: relative;
+  width: 400px;
+  height: auto;
+}
+
+#input-number {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
+  width: 180px;
+}
+
+#open-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.treasure-box {
+  position: relative;
+  display: inline-block;
+  text-align: center; /* 中央揃え */
+}
+
+#treasure {
+  width: 400px;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+#input-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -25px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+  }
+}

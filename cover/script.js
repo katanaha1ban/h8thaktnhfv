@@ -10,7 +10,7 @@ function animateImages() {
     function animate() {
       if (isAnimating) {
         opacityValue -= 0.01;
-        if (opacityValue <= 0.5) {
+        if (opacityValue <= 0.4) {
           isAnimating = false;
         }
       } else {
